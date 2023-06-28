@@ -15,15 +15,37 @@ A API de Teste de Autenticação de Rotas para Front-end é uma ferramenta que p
 3. Execute `yarn run dev` para iniciar o servidor da API.
 4. Utilize as rotas disponíveis para gerar tokens de autenticação e testar o acesso a rotas protegidas.
 
-## Rotas Disponíveis
+## Exemplos de Requisições
 
-- `/auth/token`: Rota para gerar um token de autenticação.
-- `/protected-route`: Rota protegida que requer autenticação para acessar.
+### Registrar um novo usuário
 
-## Contribuição
+Endpoint: `POST /users`
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar esta API de teste de autenticação de rotas para front-end.
+Envie os seguintes dados no corpo da requisição:
 
-## Licença
+```json
+{
+  "email": "exemplo@dominio.com",
+  "password": "senha123",
+  "name": "Nome do Usuário"
+}
+```
 
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+### Gerar um token de autenticação
+Endpoint: POST `/auth/login`
+
+```json
+{
+  "email": "exemplo@dominio.com",
+  "password": "senha123"
+}
+```
+### Buscar todos os usuários (rota protegida)
+Endpoint: `GET /users`
+
+Authorization: Bearer <seu_token_aqui>
+
+Certifique-se de substituir <seu_token_aqui> pelo token de autenticação gerado na etapa anterior.
+
+### Licença
+Este projeto está licenciado sob a MIT License.

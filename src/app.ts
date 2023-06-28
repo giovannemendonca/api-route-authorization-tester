@@ -15,7 +15,7 @@ app.register(fastifyJwt, {
 })
 
 app.get('/', async () => {
-  return { hello: 'world' }
+  return { message: 'API de teste de rotas privadas' }
 })
 
 app.register(userRoutes)
