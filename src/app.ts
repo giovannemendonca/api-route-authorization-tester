@@ -14,6 +14,10 @@ app.register(fastifyJwt, {
   }
 })
 
+app.get('/', async () => {
+  return { hello: 'world' }
+})
+
 app.register(userRoutes)
 app.register(useAuthenticate)
 
