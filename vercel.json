@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "tsconfig.json",
-      "use": "@now/next"
-    },
-    {
-      "src": "dist/index.js",
-      "use": "@now/node-server"
+      "src": "next.config.js",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/index.js"
+      "dest": "index.js"
     }
   ]
 }
