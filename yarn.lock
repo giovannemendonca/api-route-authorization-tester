@@ -304,7 +304,7 @@
   dependencies:
     fast-json-stringify "^5.7.0"
 
-"@fastify/jwt@^7.1.0":
+"@fastify/jwt@7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-7.1.0.tgz#86539882663603842cdae8efa618bfe7de20584b"
   integrity sha512-sTDsB+ViCgfeMHRDkUrYTb1+CgITlwFb0rhNd+E7PSc1Y2PfYRFyhMt2R0fdtJnhYDg8aYgEFeGJ1Q2t8v88ZA==
